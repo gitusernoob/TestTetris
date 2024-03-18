@@ -561,3 +561,9 @@ function GetLastSquareX()
     }
     return lastX;
 }
+
+
+function playAudio() {
+    var audio = document.getElementById("backgroundAudio");
+    audio.play();
+}
