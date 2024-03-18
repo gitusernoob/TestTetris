@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">       
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Tetris</title>
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <style>
+        body {
+            margin: 0; /* Rimuovi il margine predefinito */
+            padding: 0; /* Rimuovi il padding predefinito */
+            background-image: url('sfondoTetris.jpg'); /* Imposta l'immagine di sfondo */
+            background-size: cover; /* Imposta la dimensione dell'immagine di sfondo */
+            background-repeat: no-repeat; /* Impedisci la ripetizione dell'immagine di sfondo */
+            font-family: Arial, sans-serif; /* Opzionale: imposta un font di testo */
+            color: white; /* Opzionale: imposta il colore del testo */
+        }
+
+        h1 {
+            text-align: center; /* Centra il titolo */
+            font-size: 64px; /* Imposta la dimensione del font */
+            font-weight: bold; /* Rendi il testo in grassetto */
+            text-transform: uppercase; /* Converti il testo in maiuscolo */
+            color: #d3b405; /* Colore dorato */
+            text-shadow: 2px 2px 4px #000000; /* Aggiungi un'ombra al testo */
+            margin-top: 100px; /* Spazio superiore */
+            letter-spacing: 6px; /* Spaziatura tra le lettere */
+            animation: neon 1.5s ease-in-out infinite alternate; /* Aggiungi un effetto di illuminazione intermittente */
+        }
+
+        @keyframes neon {
+            0% {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 55px #fff, 0 0 75px #fff;
+            }
+            100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFD700, 0 0 70px #FFD700, 0 0 80px #FFD700, 0 0 100px #FFD700;
+            }
+        }
+
+        h2 {
+            text-align: center; /* Centra il sottotitolo */
+        }
+
+        #my-canvas {
+            display: block; /* Assicura che il canvas abbia lo stesso spazio degli altri elementi */
+            margin: 0 auto; /* Centra il canvas */
+            border: 2px solid white; /* Opzionale: aggiunge un bordo al canvas */
+        }
+    </style>
+    <script src="TetrisBasic.js"></script>
+</head>
+<body>
+    <h1>Gruppo Arman Ewa Daniele Davide</h1>
+    <h2>Progetto Tetris</h2>
+    <canvas id='my-canvas'></canvas>
+</body>
+</html>
